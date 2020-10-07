@@ -1,18 +1,13 @@
 {% extends "base.html.twig" %}
-{% block title %}Home {% endblock %}
+{% block title 'Hello City !' %}
 
 {% block body %}
 
-    <h1>Hello from France !</h1>
+    <img src="{{ asset("/img/france-flag-medium.png") }}" alt="france flag" class="rounded h-40 shadow-md mt-12">
 
-    <p>Il est actuellement {{ 'now' | date('H:i') }}</p>
+    <h1 class="mt-6 text-3xl sm:text-5xl font-semibold text-indigo-600">Hello from France !</h1>
 
+    <p class="text-lg text-gray-800">Il est actuellement {{ 'now' | date('H:i') }}</p>
 
-    <footer>
-        <p>
-        &copy; Copyright {{ 'now' | date('Y') }} 
-        &middot; <a href="#">About Us</a>
-        </p>
-    </footer>
 
 {% endblock %}
