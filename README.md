@@ -1,2 +1,2 @@
 # Hello_City
-Quick project to anderstand basic of symfony 5
+Quick project to anderstand basics of symfony 5
